@@ -32,9 +32,16 @@ header {
 
     
 }
+
+p {
+    position:relative;
+    margin-top: 70%;
+    background-color: black;
+}
 .titulo {
     position: relative;
-    margin-top: 60%;
+    margin-top: 8%;
+    font-size: 3rem;
 }
 
 .overlay {
