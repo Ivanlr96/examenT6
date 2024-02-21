@@ -25,8 +25,10 @@ header {
     height: 7rem;
     margin-top: 2%;
     background-size: 10rem;
-    background-image: url(build/templates/images/star-wars-4.svg);
-    position: absolute;
+    background-image: url('/build/templates/images/star-wars-4.svg');
+    background-repeat: no-repeat;
+    
+  
 
     
 }
