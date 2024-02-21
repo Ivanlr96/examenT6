@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="build/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Layout</title>
-
 </head>
 <body>
-    <header>
-      <div class="logo"></div>
-      <nav class="nav" id="nav">
+    <header class="header">
+    <div class="logo"></div>  
+    <nav class="nav" id="nav">
         <ul class="nav-list">
-            <li><a href="#Inicio">Inicio</a></li>
-            <li><a href="#Galeria">Galeria</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#galeria">Galeria</a></li>
         </ul>
       </nav>
-    </header>
-
+</header>
 <main>
-    <div class="overlay">
-        <h1 class="titulo">STAR WARS</h1>
-        <p class="parrafo">The Skywalker Saga</p>
-    </div>
     <div class="video">
-        <video autoplay loop muted>
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2 class="titulo">STAR WARS</h2>
+            </div>
+        </div>
+        <video autoplay muted loop>
             <source src="build/templates/videos/Star Wars Legacy Trailer The Skywalker Saga (online-video-cutter.com).mp4" type="video/mp4">
-            <source src="build/templates/videos/Star Wars Legacy Trailer The Skywalker Saga (online-video-cutter.com).mov" type="video/mov">
-            <source src="build/templates/videos/Star-Wars-Legacy-Trailer-The-Skywalker-Saga-_online-video-cutter.com_.avi" type="video/avi">
-
+            <source src="/build/templates/videos/Star Wars Legacy Trailer The Skywalker Saga (online-video-cutter.com).mov" type="video/mov">
+            <source src="/build/templates/videos/Star-Wars-Legacy-Trailer-The-Skywalker-Saga-_online-video-cutter.com_.avi" type="video/avi">
+          
         </video>
     </div>
-</main>
-<section id="galeria">
-<h1>Galeria</h1>
-<ul>
+    <section id="galeria" class="galeria contenedor">
+           
+                <h1 class="titulo2">Galeria</h1>
+            
+                <ul class="galeria-imagenes">
 
-</ul>
-</section>
+                </ul>
+ 
+        </section>
 <footer class="pie-pagina">
     <div class="grupo-1">
         <div class="box">
@@ -65,8 +67,6 @@
         <small>&copy; 2024 <b>Star Wars</b> - Todos los Derechos Reservados.</small>
       </div>
 </footer>
-
-
 <script src="build/js/index.js"></script>
 </body>
 </html>
