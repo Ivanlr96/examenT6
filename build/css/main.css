@@ -5,6 +5,7 @@
 }
 body {
     background-color: black;
+    color: yellow;
 }
 
 header {
@@ -16,11 +17,22 @@ header {
 
 .logo{
     width: 10rem;
-    height: 5rem;
-    background-image: url(/templates/images/star-wars-4.svg);
+    height: 7rem;
+    margin-top: 2%;
+    background-size: 10rem;
+    background-image: url(build/templates/images/star-wars-4.svg);
     position: absolute;
 
     
+}
+.titulo {
+    position: relative;
+    margin-top: 60%;
+}
+
+.overlay {
+    position: absolute;
+
 }
 
 video {
@@ -29,6 +41,8 @@ video {
 }
 
 .galeria {
+    text-align: center;
+    justify-content: center;
     width: 100%;
     height: auto;
 }
