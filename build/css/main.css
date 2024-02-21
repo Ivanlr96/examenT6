@@ -35,12 +35,14 @@ header {
 
 p {
     position:relative;
-    margin-top: 70%;
+    margin-top: 5%;
+    width: 90%;
+    font-size: 1.5rem;
     background-color: black;
 }
 .titulo {
     position: relative;
-    margin-top: 8%;
+    margin-top: 70%;
     font-size: 3rem;
 }
 
