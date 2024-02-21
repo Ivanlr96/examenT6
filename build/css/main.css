@@ -26,11 +26,20 @@ header {
     margin-top: 2%;
     background-size: 10rem;
     background-image: url('/build/templates/images/star-wars-4.svg');
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-size: 3rem;
     
-  
-
+}
+.nav-list a{
+    color: yellow;
+    text-decoration: none;
     
+    list-style: none;   
 }
 
 p {
@@ -48,6 +57,7 @@ p {
 
 .overlay {
     position: absolute;
+
 
 }
 
