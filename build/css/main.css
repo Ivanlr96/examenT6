@@ -13,21 +13,7 @@ body {
     font-family: 'Roboto';
 }
 
-header {
-    width: 100%;
-    height: 10vh;
-    background-color: black;
 
-}
-
-.logo{
-    width: 10rem;
-    height: 7rem;
-    margin-top: 2%;
-    background-size: 10rem;
-    background-image: url('/build/templates/images/star-wars-4.svg');
-    background-repeat: no-repeat;   
-}
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -54,17 +40,111 @@ p {
     font-size: 3rem;
     font-family: 'Oswald';
 }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: black;
+    font-size: 1.5rem;
+    height: 10vh;
+    width: 100%;
+}
+
+
+
+.logo {
+    position: relative;
+    margin-top: 2%;
+    width: 10rem;
+    height: 7rem;
+    background-size: 10rem;
+    background-repeat: no-repeat;
+    background-image:  url("/build/templates/images/star-wars-4.svg");
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    font-size: 2.5rem;
+    ;
+    
+}
+
+.nav-list li a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: end;
+}
+
+
+.video {
+    position: relative;
+    max-height: 70rem;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    display: block;
+}
+
+.video .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(31, 5, 182);
+    background: linear-gradient(270deg, rgba(19, 28, 206, 0.5) 0%, rgba(235, 5, 5, 0.3) 100%);
+}
+
+.video video {
+    width: 100%;
+    height: 20%;
+    display: block;
+}
+
 
 .overlay {
-    position: absolute;
-
-
-}
-
-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlay picture {
+    display: block;
+    max-width: 80rem;
+  }
+  @media (max-width: 480px) {
 
-}
+    .nav-list {
+      font-size: 1.5rem;
+    }
+    .logo {
+        margin-top: 6%;
+    }
+    .titulo {
+        font-size: 2rem;
+        right: 25%;
+    }
+
+  }
 
 .galeria {
     text-align: center;
