@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/build/templates/fonts/roboto.ttf');
+}
 
 *{
     margin: 0;
@@ -6,6 +10,7 @@
 body {
     background-color: black;
     color: yellow;
+    font-family: 'Roboto';
 }
 
 header {
@@ -46,3 +51,4 @@ video {
     width: 100%;
     height: auto;
 }
+
